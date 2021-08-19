@@ -1,0 +1,42 @@
+{
+	"name": "stylelint-config-goodbyte-styleguide",
+	"version": "0.0.1",
+	"description": "A Stylelint configuration following (and defining) the Goodbyte code styleguide",
+	"author": "Goodbyte <build@goodbyte.ca>",
+	"license": "MIT",
+	"homepage": "https://github.com/GoodbyteCo/Linter-Config#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GoodbyteCo/Linter-Config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/GoodbyteCo/Linter-Config/issues"
+	},
+	"keywords": [
+		"stylelint",
+		"stylelintconfig",
+		"config",
+		"goodbyte",
+		"css",
+		"styleguide"
+	],
+	"main": "index.js",
+	"scripts": {
+		"lint": "stylelint .",
+		"lint:fix": "stylelint --fix"
+	},
+	"peerDependencies": {
+		"stylelint": "^13.13.1",
+		"stylelint-config-standard": "^22.0.0",
+		"stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+		"stylelint-high-performance-animation": "^1.5.2",
+		"stylelint-no-unsupported-browser-features": "^5.0.1"
+	},
+	"devDependencies": {
+		"stylelint": "^13.13.1",
+		"stylelint-config-standard": "^22.0.0",
+		"stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+		"stylelint-high-performance-animation": "^1.5.2",
+		"stylelint-no-unsupported-browser-features": "^5.0.1"
+	}
+}
