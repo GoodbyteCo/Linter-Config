@@ -1,5 +1,3 @@
-# eslint-config-goodbyte-styleguide
-
 An ESLint configuration for Javascript and Vue files, following the Goodbyte styleguide.
 
 For more information, the rational behind the rules, or to contribute, see [the Github project](https://github.com/GoodbyteCo/Linter-Config). Report any problems or requests to [Issues](https://github.com/GoodbyteCo/Linter-Config/issues).
