@@ -1,0 +1,38 @@
+{
+	"name": "eslint-config-goodbyte",
+	"version": "0.0.1",
+	"description": "A ESLint configuration following (and defining) the Goodbyte code styleguide",
+	"author": "Goodbyte <build@goodbyte.ca>",
+	"license": "MIT",
+	"homepage": "https://github.com/GoodbyteCo/Linter-Config#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GoodbyteCo/Linter-Config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/GoodbyteCo/Linter-Config/issues"
+	},
+	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"config",
+		"goodbyte",
+		"javascript",
+		"styleguide"
+	],
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix"
+	},
+	"peerDependencies": {
+		"eslint": "^7.8.1",
+		"eslint-plugin-vue": "^7.16.0",
+		"eslint-plugin-vue-scoped-css": "^1.2.2"
+	},
+	"devDependencies": {
+		"eslint": "^7.8.1",
+		"eslint-plugin-vue": "^7.16.0",
+		"eslint-plugin-vue-scoped-css": "^1.2.2"
+	}
+}
