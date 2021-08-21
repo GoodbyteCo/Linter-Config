@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-goodbyte-styleguide",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A ESLint configuration following (and defining) the Goodbyte code styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
