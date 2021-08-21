@@ -1,8 +1,8 @@
 ---
-name: Add Rule
-about: Add a new rule to the lint configuration
+name: Remove Rule
+about: The lint configuration is too strict, and a rule should be removed
 title: ''
-labels: addition
+labels: removal
 assignees: ''
 
 ---

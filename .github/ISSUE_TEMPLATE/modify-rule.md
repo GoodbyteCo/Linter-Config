@@ -1,8 +1,8 @@
 ---
-name: Add Rule
-about: Add a new rule to the lint configuration
+name: Modify Rule
+about: A rule should be modified to behave differently
 title: ''
-labels: addition
+labels: modification
 assignees: ''
 
 ---
