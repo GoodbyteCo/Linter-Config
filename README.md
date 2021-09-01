@@ -1,1 +1,1 @@
-# Linter-Config
+# Goodbyte Styleguide

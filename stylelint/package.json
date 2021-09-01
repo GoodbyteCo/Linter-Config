@@ -1,16 +1,16 @@
 {
 	"name": "stylelint-config-goodbyte-styleguide",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A Stylelint configuration following (and defining) the Goodbyte code styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
-	"homepage": "https://github.com/GoodbyteCo/Linter-Config#readme",
+	"homepage": "https://github.com/GoodbyteCo/Styleguide#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/GoodbyteCo/Linter-Config.git"
+		"url": "git+https://github.com/GoodbyteCo/Styleguide.git"
 	},
 	"bugs": {
-		"url": "https://github.com/GoodbyteCo/Linter-Config/issues"
+		"url": "https://github.com/GoodbyteCo/Styleguide/issues"
 	},
 	"keywords": [
 		"stylelint",
