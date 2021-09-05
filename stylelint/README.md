@@ -11,7 +11,7 @@ Install the latest version of the config:
 npm install stylelint-config-goodbyte-styleguide --save-dev
 ```
 
-and add it to your `.stylelintrc` file:
+Then, add it to your `.stylelintrc` file:
 
 ```json
 {

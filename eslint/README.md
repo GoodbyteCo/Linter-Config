@@ -11,7 +11,7 @@ Install the latest version of the config:
 npm install eslint-config-goodbyte-styleguide --save-dev
 ```
 
-and add it to your `.eslintrc` file:
+Then, add it to your `.eslintrc` file:
 
 ```json
 {
