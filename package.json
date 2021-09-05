@@ -1,0 +1,12 @@
+{
+	"name": "goodbyte-styleguide",
+	"description": "the Goodbyte styleguide",
+	"author": "Goodbyte <build@goodbyte.ca>",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^7.8.1",
+		"eslint-plugin-vue": "^7.16.0",
+		"eslint-plugin-vue-scoped-css": "^1.2.2",
+		"stylelint": "^13.13.1"
+	}
+}

@@ -25,7 +25,7 @@ jobs:
           node-version: 16
 
       - name: Install Node.js dependencies
-        run: npm install --prefix eslint && npm install --prefix stylelint
+        run: npm install
 
       - name: Run linters
         uses: wearerequired/lint-action@v1
