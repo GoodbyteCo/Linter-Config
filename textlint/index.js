@@ -1,6 +1,21 @@
+const { moduleInterop } = require('@textlint/module-interop')
+
 module.exports = {
-	'rules': 
-	{
+	rules: {
+		'no-unmatched-pair': moduleInterop(require('@textlint-rule/textlint-rule-no-unmatched-pair')),
+		'abbr-within-parentheses': moduleInterop(require('textlint-rule-abbr-within-parentheses')),
+		'apostrophe': moduleInterop(require('textlint-rule-apostrophe')),
+		'common-misspellings': moduleInterop(require('textlint-rule-common-misspellings')),
+		'diacritics': moduleInterop(require('textlint-rule-diacritics')),
+		'doubled-spaces': moduleInterop(require('textlint-rule-doubled-spaces')),
+		'en-capitalization': moduleInterop(require('textlint-rule-en-capitalization')),
+		'en-max-word-count': moduleInterop(require('textlint-rule-en-max-word-count')),
+		'no-dead-link': moduleInterop(require('textlint-rule-no-dead-link')),
+		'no-empty-section': moduleInterop(require('textlint-rule-no-empty-section')),
+		'no-start-duplicated-conjunction': moduleInterop(require('textlint-rule-no-start-duplicated-conjunction')),
+		'terminology': moduleInterop(require('textlint-rule-terminology')),
+	},
+	rulesConfig: {
 		'diacritics': true,
 		'apostrophe': true,
 		'no-dead-link': true,
@@ -9,20 +24,20 @@ module.exports = {
 		'common-misspellings': true,
 		'abbr-within-parentheses': true,
 		'@textlint-rule/no-unmatched-pair': true,
-		'no-start-duplicated-conjunction': { 'interval': 2 },
-		'en-max-word-count': { 'max': 50 },
+		'no-start-duplicated-conjunction': { interval: 2 },
+		'en-max-word-count': { max: 50 },
 		'en-capitalization': {
-			'allowFigures': true,
-			'allowLists': true,
-			'allowWords': [
+			allowFigures: true,
+			allowLists: true,
+			allowWords: [
 				'bell',
 				'jit',
 				'jue',
 			],
 		},
 		'terminology': {
-			'defaultTerms': false,
-			'terms': [
+			defaultTerms: false,
+			terms: [
 				'Airbnb',
 				'Android',
 				'AppleScript',
