@@ -1,5 +1,5 @@
 
-An ESLint configuration for Javascript and Vue files, following the Goodbyte styleguide.
+An Textlint configuration following the Goodbyte styleguide.
 
 For more information, the rational behind the rules, or to contribute, see [the project on Github](https://github.com/GoodbyteCo/Styleguide). Report any problems, or requests, to [Issues](https://github.com/GoodbyteCo/Styleguide/issues).
 
@@ -8,15 +8,13 @@ For more information, the rational behind the rules, or to contribute, see [the 
 Install the latest version of the config: 
 
 ```bash
-npm install eslint-config-goodbyte-styleguide --save-dev
+npm install textlint-rule-preset-goodbyte-styleguide --save-dev
 ```
 
-Then, add it to your `.eslintrc` file:
+Then, add it to your `.textlint` file:
 
 ```json
 {
-    "extends": [
-        "goodbyte-styleguide"
-    ]
+	"rules": { "goodbyte-styleguide": true }
 }
 ```

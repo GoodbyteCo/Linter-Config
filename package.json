@@ -3,14 +3,17 @@
 	"description": "the Goodbyte styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
-	"devDependencies": {
-		"eslint": "^7.8.1",
-		"eslint-plugin-vue": "^7.16.0",
-		"eslint-plugin-vue-scoped-css": "^1.2.2",
-		"stylelint": "^13.13.1",
-		"stylelint-config-standard": "^22.0.0",
-		"stylelint-declaration-block-no-ignored-properties": "^2.4.0",
-		"stylelint-high-performance-animation": "^1.5.2",
-		"stylelint-no-unsupported-browser-features": "^5.0.1"
+	"scripts": {
+		"lint": "npm run lint:js && npm run lint:text",
+		"lint:fix": "npm run lint:js:fix && npm run lint:text:fix",
+		"lint:js": "eslint .",
+		"lint:js:fix": "eslint . --fix",
+		"lint:text": "textlint .",
+		"lint:text:fix": "textlint . --config textlint/index.js --fix"
+	},
+	"dependencies": {
+		"eslint-config-goodbyte-styleguide": "file:eslint",
+		"stylelint-config-goodbyte-styleguide": "file:stylelint",
+		"textlint-rule-preset-goodbyte-styleguide": "file:textlint"
 	}
 }
