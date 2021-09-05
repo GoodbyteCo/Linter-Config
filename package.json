@@ -3,7 +3,16 @@
 	"description": "the Goodbyte styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
+	"scripts": {
+		"lint": "lint:js && lint:text",
+		"lint:fix": "lint:js:fix && lint:text:fix",
+		"lint:js": "eslint .",
+		"lint:js:fix": "eslint . --fix",
+		"lint:text": "textlint . --config textlint/index.js",
+		"lint:text:fix": "textlint . --config textlint/index.js --fix"
+	},
 	"devDependencies": {
+		"@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.8",
 		"eslint": "^7.8.1",
 		"eslint-plugin-vue": "^7.16.0",
 		"eslint-plugin-vue-scoped-css": "^1.2.2",
@@ -11,6 +20,19 @@
 		"stylelint-config-standard": "^22.0.0",
 		"stylelint-declaration-block-no-ignored-properties": "^2.4.0",
 		"stylelint-high-performance-animation": "^1.5.2",
-		"stylelint-no-unsupported-browser-features": "^5.0.1"
+		"stylelint-no-unsupported-browser-features": "^5.0.1",
+		"textlint": "^12.0.2",
+		"textlint-rule-abbr-within-parentheses": "^1.0.2",
+		"textlint-rule-apostrophe": "^2.0.0",
+		"textlint-rule-common-misspellings": "^1.0.1",
+		"textlint-rule-diacritics": "^1.0.0",
+		"textlint-rule-doubled-spaces": "^1.0.0",
+		"textlint-rule-en-capitalization": "^2.0.3",
+		"textlint-rule-en-max-word-count": "^1.1.0",
+		"textlint-rule-en-spell": "^1.2.3",
+		"textlint-rule-no-dead-link": "^4.7.0",
+		"textlint-rule-no-empty-section": "^1.1.0",
+		"textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
+		"textlint-rule-terminology": "^2.1.5"
 	}
 }
