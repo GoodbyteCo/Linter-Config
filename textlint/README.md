@@ -11,10 +11,10 @@ Install the latest version of the config:
 npm install textlint-rule-preset-goodbyte-styleguide --save-dev
 ```
 
-Then, add it to your `.textlint` file:
+Then, add it to your `.textlintrc` file:
 
 ```json
 {
-	"rules": { "goodbyte-styleguide": true }
+	"rules": { "preset-goodbyte-styleguide": true }
 }
 ```

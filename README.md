@@ -8,12 +8,13 @@ The Styleguide is a set of formatting choices made to ensure our codebase is eas
 
 ## Usage
 
-It is recommended that you install the [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io) plugins available for your IDE, and configure it to auto-format on save. For Visual Studio Code, you can find them in the extension marketplace: [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint); and you can enable auto-formatting by adding [these settings](./.vscode/settings.json) to the repo’s `.vscode/settings.json` file.
+It is recommended that you install the [ESLint](https://eslint.org), [Stylelint](https://stylelint.io), and [Textlint](https://textlint.github.io) plugins available for your IDE, and configure it to auto-format on save. For Visual Studio Code, you can find them in the extension marketplace: [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint), [Textlint](https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint); and you can enable auto-formatting by adding [these settings](./.vscode/settings.json) to the repo’s `.vscode/settings.json` file.
 
 Each linter configuration covers a different set of languages and file types. For languages that are covered by multiple linters, install all of them. There are currently two lint-configs:
 
 - **[ESLint](#eslint)**: Javascript, Vue
 - **[Stylelint](#stylelint)**: CSS, Vue (style blocks)
+- **[Textlint](#textlint)**: Markdown, plaintext
 
 Finally, it is recommended that you add [this yaml file](./.github/workflows/lint.yml) to the repo’s `.github/workflows/` directory to add a lint check to every push and pull-request on the `main` branch.
 
@@ -46,6 +47,22 @@ Then, add it to the `.stylelintrc` file at the root of the repo:
 ```json
 {
     "extends": "stylelint-config-goodbyte-styleguide"
+}
+```
+
+### Textlint
+
+For Markdown (or any projects containing a README) (`.md`, `.txt`). Install the [npm package](https://www.npmjs.com/package/textlint-rule-preset-goodbyte-styleguide) by running:
+
+```bash
+npm install textlint textlint-rule-preset-goodbyte-styleguide --save-dev
+```
+
+Then, add it to the `.textlintrc` file at the root of the repo:
+
+```json
+{
+	"rules": { "preset-goodbyte-styleguide": true }
 }
 ```
 
