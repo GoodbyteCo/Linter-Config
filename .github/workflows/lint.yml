@@ -34,3 +34,6 @@ jobs:
           eslint_extensions: js,vue
           stylelint: true
           stylelint_extensions: css,vue
+
+      - name: Run textlint
+        run: npm run lint:text

@@ -1,3 +1,3 @@
 {
-	"extends": "./stylelint/index.js"
+	"extends": "stylelint-config-goodbyte-styleguide"
 }

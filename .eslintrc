@@ -1,4 +1,3 @@
 {
-	// use this own package's config 
-	"extends": "./eslint/index.js"
+	"extends": "goodbyte-styleguide"
 }
