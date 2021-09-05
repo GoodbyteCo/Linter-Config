@@ -1,6 +1,6 @@
 {
 	"name": "textlint-rule-preset-goodbyte-styleguide",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "A Textlint configuration following (and defining) the Goodbyte Styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
@@ -14,7 +14,7 @@
 	},
 	"keywords": [
 		"textlint",
-		"textlintconfig",
+		"textlintrule",
 		"config",
 		"goodbyte",
 		"english",
@@ -36,6 +36,7 @@
 		"textlint-rule-doubled-spaces": "^1.0.0",
 		"textlint-rule-en-capitalization": "^2.0.3",
 		"textlint-rule-en-max-word-count": "^1.1.0",
+		"textlint-rule-max-comma": "^2.0.2",
 		"textlint-rule-no-dead-link": "^4.7.0",
 		"textlint-rule-no-empty-section": "^1.1.0",
 		"textlint-rule-no-start-duplicated-conjunction": "^2.0.2",

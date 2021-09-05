@@ -1,7 +1,7 @@
 {
 	"name": "stylelint-config-goodbyte-styleguide",
-	"version": "0.0.3",
-	"description": "A Stylelint configuration following (and defining) the Goodbyte code styleguide",
+	"version": "0.0.4",
+	"description": "A Stylelint configuration following (and defining) the Goodbyte Styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
 	"homepage": "https://github.com/GoodbyteCo/Styleguide#readme",

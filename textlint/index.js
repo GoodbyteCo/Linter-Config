@@ -14,6 +14,7 @@ module.exports = {
 		'no-empty-section': moduleInterop(require('textlint-rule-no-empty-section')),
 		'no-start-duplicated-conjunction': moduleInterop(require('textlint-rule-no-start-duplicated-conjunction')),
 		'terminology': moduleInterop(require('textlint-rule-terminology')),
+		'max-comma': moduleInterop(require('textlint-rule-max-comma')),
 	},
 	rulesConfig: {
 		'diacritics': true,
@@ -26,6 +27,7 @@ module.exports = {
 		'@textlint-rule/no-unmatched-pair': true,
 		'no-start-duplicated-conjunction': { interval: 2 },
 		'en-max-word-count': { max: 50 },
+		'max-comma': { max: 4 },
 		'en-capitalization': {
 			allowFigures: true,
 			allowLists: true,
