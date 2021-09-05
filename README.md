@@ -1,10 +1,57 @@
 # Goodbyte Styleguide
 
+[ [Usage](#usage) ]
+[ [Contributing](#contributing) ]
+[ [Rational](#rational) ]
+
 The Styleguide is a set of formatting choices made to ensure our codebase is easy to read, easy to contribute to, and above all, consistent with itself. This style is defined and enforced by the linter configurations in this repo. These rules are not set in stone, and if you find that the linter is suggesting something you find _less_ readable, please feel free to request a change to the rules (see: _[Contributing](#contributing)_).
 
 ## Usage
 
+It is recommended that you install the [Eslint](https://eslint.org) and [Stylelint](https://stylelint.io) plugins available for your IDE, and configure it to auto-format on save. For Visual Studio Code, you can find them in the extension marketplace: [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint); and you can enable auto-formatting by adding [these settings](./.vscode/settings.json) to the repo's `.vscode/settings.json` file.
+
+Each linter configuration covers a different set of languages and file types. For languages that are covered by multiple linters, install all of them. There are currently two lint-configs:
+
+- **[Eslint](#eslint)**: Javascript, Vue
+- **[Stylelint](#stylelint)**: CSS, Vue (style blocks)
+
+Finally, it is recommended that you add [this yaml file](./.github/workflows/lint.yml) to the repo's `.github/workflows/` directory to add a lint check to every push and pull-request on the `main` branch.
+
+### Eslint
+
+For Javascript and Vue projects (`.js`, `.jsx`, `.vue`). Install the [npm package](https://www.npmjs.com/package/eslint-config-goodbyte-styleguide) by running:
+
+```bash
+npm install eslint eslint-config-goodbyte-styleguide --save-dev
+```
+
+and add it to the `.eslintrc` file at the root of the repo:
+
+```json
+{
+    "extends": "goodbyte-styleguide"
+}
+```
+
+### Stylelint
+
+For CSS and Vue projects (`.css`, `.vue`). Install the [npm package](https://www.npmjs.com/package/stylelint-config-goodbyte-styleguide) by running:
+
+```bash
+npm install stylelint stylelint-config-goodbyte-styleguide --save-dev
+```
+
+and add it to the `.stylelintrc` file at the root of the repo:
+
+```json
+{
+    "extends": "stylelint-config-goodbyte-styleguide"
+}
+```
+
 ## Contributing
+
+If you find a bug, a missing use-case, or wish to add an additional config, please feel encouraged to contribute. This styleguide is a living document, and nothing is set in stone. If you find that the linter is too strict, not strict enough, or otherwise lacking, open an [issue](https://github.com/GoodbyteCo/Styleguide/issues) (or pull-request if you know what the fix would be).
 
 ## Rational
 
