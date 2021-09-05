@@ -53,6 +53,8 @@ and add it to the `.stylelintrc` file at the root of the repo:
 
 If you find a bug, a missing use-case, or wish to add an additional config, please feel encouraged to contribute. This styleguide is a living document, and nothing is set in stone. If you find that the linter is too strict, not strict enough, or otherwise lacking, open an [issue](https://github.com/GoodbyteCo/Styleguide/issues) (or pull-request if you know what the fix would be).
 
+When updating the rules, note that each folder is published to npm separately. Packages will only be published if the version number in the `package.json` file is increased.
+
 ## Rational
 
 The following covers some FAQs about the rational behind this styleguide's choices.
