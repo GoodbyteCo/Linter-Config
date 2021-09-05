@@ -93,7 +93,7 @@ module.exports = {
 
 		'declaration-empty-line-before': null,
 		'comment-empty-line-before': null,
-
+		'csstools/use-logical': 'always',
 		'plugin/no-unsupported-browser-features': [
 			true, {
 				browsers: [ 
@@ -111,5 +111,6 @@ module.exports = {
 		'stylelint-no-unsupported-browser-features',
 		'stylelint-high-performance-animation',
 		'stylelint-declaration-block-no-ignored-properties',
+		'stylelint-use-logical',
 	],
 }
