@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-goodbyte-styleguide",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "A ESLint configuration following (and defining) the Goodbyte Styleguide",
 	"author": "Goodbyte <build@goodbyte.ca>",
 	"license": "MIT",
@@ -25,12 +25,7 @@
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix"
 	},
-	"peerDependencies": {
-		"eslint": "^7.8.1",
-		"eslint-plugin-vue": "^7.16.0",
-		"eslint-plugin-vue-scoped-css": "^1.2.2"
-	},
-	"devDependencies": {
+	"dependencies": {
 		"eslint": "^7.8.1",
 		"eslint-plugin-vue": "^7.16.0",
 		"eslint-plugin-vue-scoped-css": "^1.2.2"
