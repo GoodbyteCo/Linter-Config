@@ -27,4 +27,4 @@ jobs:
         uses: "actions/npm@master"
         with:
           args: publish --access public
-          secrets: [ NPM_TOKEN ]
+          secrets: [ "NPM_TOKEN" ]
