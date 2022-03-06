@@ -5,7 +5,7 @@
 	license: 'MIT',
 	scripts: {
 		// publish all packages -- except this one!
-		pub: 'pnpm --recursive --filter=!goodbyte-styleguide list',
+		pub: 'pnpm --recursive --filter=!goodbyte-styleguide publish',
 
 		// linting commands
 		lint: 'pnpm run lint:js && pnpm run lint:text',
