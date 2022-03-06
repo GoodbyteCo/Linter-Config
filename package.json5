@@ -1,0 +1,19 @@
+{
+	name: 'goodbyte-styleguide',
+	description: 'the Goodbyte styleguide',
+	author: 'Goodbyte <build@goodbyte.ca>',
+	license: 'MIT',
+	scripts: {
+		'lint': 'pnpm run lint:js && pnpm run lint:text',
+		'lint:fix': 'pnpm run lint:js:fix && pnpm run lint:text:fix',
+		'lint:js': 'eslint .',
+		'lint:js:fix': 'eslint . --fix',
+		'lint:text': 'textlint .',
+		'lint:text:fix': 'textlint . --config textlint/index.js --fix'
+	},
+	dependencies: {
+		'eslint-config-goodbyte-styleguide': 'file:eslint',
+		'stylelint-config-goodbyte-styleguide': 'file:stylelint',
+		'textlint-rule-preset-goodbyte-styleguide': 'file:textlint'
+	}
+}

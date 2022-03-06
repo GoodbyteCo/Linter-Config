@@ -1,0 +1,11 @@
+lockfileVersion: 5.3
+
+specifiers:
+  eslint-config-goodbyte-styleguide: file:eslint
+  stylelint-config-goodbyte-styleguide: file:stylelint
+  textlint-rule-preset-goodbyte-styleguide: file:textlint
+
+dependencies:
+  eslint-config-goodbyte-styleguide: link:eslint
+  stylelint-config-goodbyte-styleguide: link:stylelint
+  textlint-rule-preset-goodbyte-styleguide: link:textlint

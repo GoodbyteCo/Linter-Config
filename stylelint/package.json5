@@ -1,0 +1,42 @@
+{
+	name: 'stylelint-config-goodbyte-styleguide',
+	version: '0.1.0',
+	description: 'A Stylelint configuration following (and defining) the Goodbyte Styleguide',
+	homepage: 'https://github.com/GoodbyteCo/Styleguide#readme',
+	author: 'Goodbyte <build@goodbyte.ca>',
+	license: 'MIT',
+	repository: {
+		type: 'git',
+		url: 'git+https://github.com/GoodbyteCo/Styleguide.git',
+	},
+	bugs: {
+		url: 'https://github.com/GoodbyteCo/Styleguide/issues',
+	},
+	keywords: [
+		'stylelint',
+		'stylelintconfig',
+		'config',
+		'goodbyte',
+		'css',
+		'styleguide',
+	],
+	main: 'index.js',
+	scripts: {
+		lint: 'stylelint .',
+		fix: 'stylelint --fix',
+	},
+	dependencies: {
+		'stylelint': '^14.5.3',
+		'stylelint-config-standard': '^25.0.0',
+		'stylelint-declaration-block-no-ignored-properties': '^2.4.0',
+		'stylelint-high-performance-animation': '^1.5.2',
+		'stylelint-no-unsupported-browser-features': '^5.0.1',
+		'stylelint-use-logical': '^1.1.0',
+	},
+	pnpm: {
+		peerDependencyRules: {
+			// force stylelint-use-logical to use up-to-date version
+			allowedVersions: { 'stylelint': '^14.5.3' },
+		},
+	}
+}
