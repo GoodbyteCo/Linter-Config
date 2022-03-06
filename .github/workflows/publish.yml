@@ -1,0 +1,31 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '*'
+      - '**'
+      - '!*lint/**' # run on any changes to the ____lint folders
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Publish packages
+        run: pnpm run pub
