@@ -24,7 +24,7 @@ jobs:
         run: pnpm install --shamefully-hoist --prefix eslint
 
       - name: Publish
-        uses: "actions/npm@master"
+        uses: znck/pnpm@v0.1.0-alpha.1
         with:
           args: publish --access public
-          secrets: [ "NPM_TOKEN" ]
+          secrets: ${{ secrets.NPM_TOKEN }}
