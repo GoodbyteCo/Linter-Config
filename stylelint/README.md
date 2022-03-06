@@ -17,8 +17,6 @@ Then, add it to your `.stylelintrc` file:
 
 ```json
 {
-    "extends": [
-        "stylelint-config-goodbyte-styleguide"
-    ]
+    "extends": [ "stylelint-config-goodbyte-styleguide" ]
 }
 ```

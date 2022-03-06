@@ -17,8 +17,6 @@ Then, add it to your `.eslintrc` file:
 
 ```json
 {
-    "extends": [
-        "goodbyte-styleguide"
-    ]
+    "extends": [ "goodbyte-styleguide" ]
 }
 ```
