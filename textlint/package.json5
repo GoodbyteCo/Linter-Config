@@ -1,6 +1,6 @@
 {
 	name: 'textlint-rule-preset-goodbyte-styleguide',
-	version: '0.1.0',
+	version: '0.1.1',
 	description: 'A Textlint configuration following (and defining) the Goodbyte Styleguide',
 	homepage: 'https://github.com/GoodbyteCo/Styleguide#readme',
 	author: 'Goodbyte <build@goodbyte.ca>',
