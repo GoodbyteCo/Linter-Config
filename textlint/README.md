@@ -1,7 +1,9 @@
 
 An Textlint configuration following the Goodbyte styleguide.
 
-For more information, the rational behind the rules, or to contribute, see [the project on Github](https://github.com/GoodbyteCo/Styleguide). Report any problems, or requests, to [Issues](https://github.com/GoodbyteCo/Styleguide/issues).
+For more information, the rational behind the rules, or to contribute, see
+[the project on Github](https://github.com/GoodbyteCo/Styleguide). Report any problems,
+or requests, to [Issues](https://github.com/GoodbyteCo/Styleguide/issues).
 
 ## Installation
 

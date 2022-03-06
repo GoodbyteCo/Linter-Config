@@ -10,5 +10,25 @@
 		"source.fixAll.stylelint": true
 	},
 	"stylelint.enable": true,
-	"textlint.autoFixOnSave": true
+	"textlint.autoFixOnSave": true,
+
+	// no need to copy these, this is just some QoL settings for this repo
+	"files.exclude": {
+		"**/.git": true,
+		".gitignore": true,
+		"**/.DS_Store": true,
+		"**/pnpm-lock.yaml": true,
+		"**/node_modules": true,
+		"dist": true,
+		".eslintrc": true,
+		".textlintrc": true,
+		".stylelintrc": true,
+		"LICENSE": true,
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [{
+			"scope": "string.key.json5",
+			"settings": { "foreground": "#8BDEDB" },
+		}],
+	},
 }
