@@ -1,5 +1,5 @@
 
-An Stylelint configuration following the Goodbyte styleguide.
+A Stylelint configuration following the Goodbyte Styleguide.
 
 For more information, the rational behind the rules, or to contribute, see
 [the project on Github](https://github.com/GoodbyteCo/Styleguide). Report any problems,

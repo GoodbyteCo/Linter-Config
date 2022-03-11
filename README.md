@@ -15,7 +15,7 @@ _[Contributing](#contributing)_).
 
 It is recommended that you install the [ESLint](https://eslint.org),
 [Stylelint](https://stylelint.io), and [Textlint](https://textlint.github.io) plugins
-available for your IDE, and configure it to auto-format on save. For Visual Studio
+available for your IDE, and configure it to autoformat on save. For Visual Studio
 Code, you can find them in the extension marketplace: 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint),
 [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint),
