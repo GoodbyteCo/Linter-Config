@@ -20,3 +20,5 @@ Then, add it to your `.stylelintrc` file:
     "extends": [ "stylelint-config-goodbyte-styleguide" ]
 }
 ```
+
+**Note: this package is still under development.**
