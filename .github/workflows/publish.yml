@@ -3,10 +3,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - '*'
-      - '**'
-      - '!*lint/**' # run on any changes to the ____lint folders
 
 jobs:
   build:
