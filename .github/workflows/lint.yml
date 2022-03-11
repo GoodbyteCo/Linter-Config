@@ -33,12 +33,4 @@ jobs:
         run: pnpm install --shamefully-hoist
 
       - name: Run linters
-        uses: wearerequired/lint-action@v1
-        with:
-          eslint: true
-          eslint_extensions: js,vue
-          stylelint: true
-          stylelint_extensions: css,vue
-
-      - name: Run textlint
-        run: npm run lint:text
+        run: pnpm run lint

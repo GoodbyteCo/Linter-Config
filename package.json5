@@ -12,7 +12,7 @@
 		fix: 'pnpm run lint:js:fix && pnpm run lint:text:fix',
 		'lint:js': 'eslint .',
 		'lint:js:fix': 'eslint . --fix',
-		'lint:text': 'textlint .',
+		'lint:text': 'textlint . --config textlint/index.js',
 		'lint:text:fix': 'textlint . --config textlint/index.js --fix'
 	},
 	dependencies: {
