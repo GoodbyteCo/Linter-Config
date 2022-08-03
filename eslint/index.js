@@ -92,6 +92,82 @@ module.exports = {
 		{ files: [ '*.vue' ], rules: { indent: 'off' }},
 		{ files: [ '*/components/*.vue' ], rules: { 'vue-scoped-css/enforce-style-type': [ 'error', { allows: [ 'scoped' ]}]}},
 		{ files: [ '*.test.*', '*.spec.*' ], rules: { 'no-undef': 'off' }},
+		{
+			files: [ '*.vue', '*.ts' ],
+			parser: '@typescript-eslint/parser',
+			plugins: [ 'vue', '@typescript-eslint' ],
+			extends: [
+				'eslint:recommended',
+				'plugin:vue/vue3-recommended',
+				'plugin:vue/vue3-essential',
+				'plugin:vue/vue3-strongly-recommended',
+				'plugin:vue-scoped-css/vue3-recommended',
+				'plugin:@typescript-eslint/recommended',
+				'plugin:@typescript-eslint/recommended-requiring-type-checking',
+			],
+			rules: {
+				'indent': 'off',
+				'@typescript-eslint/indent': [ 'error', 'tab' ],
+				'quotes': 'off',
+				'@typescript-eslint/quotes': [ 'error', 'single' ],
+				'semi': 'off',
+				'@typescript-eslint/semi': [ 'error', 'never' ],
+				'brace-style': 'off',
+  				'@typescript-eslint/brace-style': [
+					'error', 'stroustrup', { allowSingleLine: true },
+				],
+				'comma-dangle': 'off',
+  				'@typescript-eslint/comma-dangle': [ 'error', 'always-multiline' ],
+				"comma-spacing": 'off',
+				"@typescript-eslint/comma-spacing": [ 'error', { before: false, after: true }],
+				'func-call-spacing': 'off',
+				'@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
+				'keyword-spacing': 'off',
+				'@typescript-eslint/keyword-spacing': [ 'error', { before: true, after: true }],
+				'object-curly-spacing': 'off',
+				'@typescript-eslint/object-curly-spacing': [
+					'error', 'always', { arraysInObjects: false, objectsInObjects: false },
+				],
+
+				'@typescript-eslint/consistent-type-definitions': [ 'error', 'interface' ],
+				'@typescript-eslint/no-unnecessary-condition': [ 'error' ],
+				'@typescript-eslint/no-non-null-asserted-nullish-coalescing': [ 'error' ],
+				'@typescript-eslint/no-duplicate-enum-values': [ 'error' ],
+				'@typescript-eslint/no-confusing-void-expression': [ 'error' ],
+				'@typescript-eslint/no-unnecessary-type-arguments': [ 'error' ],
+				'@typescript-eslint/prefer-for-of': [ 'error' ],
+				'@typescript-eslint/type-annotation-spacing': [ 'error' ],
+				'@typescript-eslint/strict-boolean-expressions': [ 'error' ],
+				'@typescript-eslint/method-signature-style': [ 'error', 'property' ],
+				'@typescript-eslint/member-delimiter-style': [ 'error', {
+					multiline: { delimiter: 'none', requireLast: false },
+					singleline: { delimiter: 'comma', requireLast: false },
+					multilineDetection: 'brackets',
+				}],
+				'@typescript-eslint/naming-convention': [
+					'error',
+					{
+						selector: [ 'typeLike' ],
+						format: [ 'PascalCase' ],
+					},
+					{
+						selector: 'enumMember',
+						format: [ 'UPPER_CASE' ],
+					},
+					{
+						selector: 'variable',
+						modifiers: [ 'const', 'global' ],
+						types: [ 'boolean', 'string', 'number', 'array' ], // any but function
+						format: [ 'UPPER_CASE' ]
+					},
+					{
+						selector: [ 'variable', 'function', 'parameter', 'property', 'method' ],
+						format: [ 'camelCase' ],
+						leadingUnderscore: 'allow'
+					},
+				],
+			}
+		}
 	],
 	
 	extends: [
