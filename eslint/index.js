@@ -6,7 +6,7 @@ module.exports = {
 		'linebreak-style': [ 'error', 'unix' ],
 		'quotes': [ 'error', 'single' ],
 		'semi': [ 'error', 'never' ],
-		'array-bracket-newline': [ 'error', { 'multiline': true, 'minItems': 3 }],
+		'array-bracket-newline': [ 'error', { 'multiline': true, 'minItems': 5 }],
 		'array-bracket-spacing': [
 			'error', 'always', { objectsInArrays: false, arraysInArrays: false },
 		],
@@ -54,9 +54,6 @@ module.exports = {
 					'template', 'script', 'style', 'docs', 
 				],
 			},
-		],
-		'vue/component-name-in-template-casing': [
-			'error', 'kebab-case', { registeredComponentsOnly: false },
 		],
 		'vue/html-comment-indent': [ 'error', 'tab' ],
 		'vue/html-comment-content-spacing': [ 'error', 'always' ],
