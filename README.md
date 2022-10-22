@@ -121,7 +121,7 @@ The following covers some FAQs about the rational behind this styleguide’s cho
 2. _**"Styleguide"?**_
 	
 	We format _styleguide_ as a single word (rather than "style-guide" or "style guide") 
-	ecause it is its own thing, deserving of its own word. This styleguide can be referred
+	because it is its own thing, deserving of its own word. This styleguide can be referred
 	to as "the Styleguide" with an uppercase _S_, since it is a proper noun, but otherwise
 	the word should be written like a common noun (lowercase).
 
@@ -136,7 +136,7 @@ The following covers some FAQs about the rational behind this styleguide’s cho
 	but is actually a bunch of spaces in a row. The result is that the size of the
 	indentation (2 spaces, 4 spaces, etc.) is burned into the code, and therefore "more
 	consistent" across environments. However, this is a misguided goal. Code does not
-	need to be consistent across all environment, just all of _your_ environments. I
+	need to be consistent across all environments, just all of _your_ environments. I
 	personally like my code indented at a width of 4, and when working with a codebase
 	that uses spaces, must adjust to the (now inconsistent) use of 2 or 4 or 8 spaces of
 	indentation instead. Burning this width into the code is as if the codebase shipped
